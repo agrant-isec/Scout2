@@ -938,6 +938,7 @@
                   <li class="dropdown-header">EC2 config</li>
                   <li><a href="javascript:list_generic('ec2_elb')">ELBs</a></li>
                   <li><a href="javascript:list_generic('ec2_instance')">Instances</a></li>
+                  <li><a href="javascript:list_generic('ec2_vpc')">VPCs</a></li>
                   <li><a href="javascript:list_generic('ec2_network_acl')">Network ACLs</a></li>
                   <li><a href="javascript:list_generic('ec2_security_group')">Security Groups</a></li>
                   <li class="divider"></li>
@@ -1320,7 +1321,7 @@
           </ul>
         </div>
         <div class="col-sm-8" id="ec2_vpcs-details">
-          <script id="ec2_vpcs-detail-template" type="text/x-handlebars-template">
+          <script id="ec2_vpc-detail-template" type="text/x-handlebars-template">
           {{#each items}}
             <div id="ec2_region-details-{{@key}}">
               {{#each vpcs}}
